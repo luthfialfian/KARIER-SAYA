@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak — Muhamad Luthfi Alfian</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    #contact-section {
+      padding-top: 7rem;
+      padding-bottom: 6rem;
+    }
+    header h1, header p {
+      text-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+    .contact-box {
+      background: rgba(31, 41, 55, 0.8);
+      border: 1px solid rgba(107, 114, 128, 0.4);
+      border-radius: 14px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 20px rgba(99,102,241,0.5);
+    }
+    .contact-icon {
+      color: #818cf8;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease;
+    }
+    .contact-icon:hover {
+      color: #a78bfa;
+    }
+    @media (max-width: 640px) {
+      header div {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+      }
+    }
+
+    /* Tombol shortcut ke awal */
+    .shortcut-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #fff;
+      padding: 0.8rem 1rem;
+      border-radius: 50px;
+      box-shadow: 0 0 15px rgba(99,102,241,0.6);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      z-index: 50;
+    }
+
+    .shortcut-btn:hover {
+      background: linear-gradient(135deg, #6366f1, #818cf8);
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(129,140,248,0.8);
+    }
+
+    @media (max-width: 640px) {
+      .shortcut-btn {
+        bottom: 20px;
+        right: 16px;
+        padding: 0.7rem 0.9rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 relative overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed w-full top-0 left-0 bg-gray-900 bg-opacity-70 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-gray-200 text-sm md:text-base font-medium">Muhamad Luthfi Alfian</h1>
+      <p class="text-xl md:text-2xl font-semibold tracking-wide text-indigo-400">IT SUPPORT</p>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact-section" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-gray-900 to-purple-900 opacity-70"></div>
+
+    <div class="max-w-3xl z-10">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-indigo-400">Hubungi Saya</h2>
+      <p class="text-gray-300 mb-8 leading-relaxed">
+        Jangan ragu untuk menghubungi saya melalui platform berikut.  
+        Saya selalu terbuka untuk berdiskusi, berkolaborasi, atau peluang kerja baru.
+      </p>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/6283831548299" target="_blank" class="contact-box p-6 block hover:bg-gray-800 transition">
+          <i class="fab fa-whatsapp contact-icon"></i>
+          <h3 class="text-lg font-semibold mb-1">WhatsApp</h3>
+          <p class="text-gray-400 text-sm">+62-838-3154-8299</p>
+        </a>
+
+        <!-- GMAIL -->
+        <a href="mailto:muhamadluthfi3488@gmail.com" class="contact-box p-6 block hover:bg-gray-800 transition">
+          <i class="fas fa-envelope contact-icon"></i>
+          <h3 class="text-lg font-semibold mb-1">Gmail</h3>
+          <p class="text-gray-400 text-sm">muhamadluthfi3488@gmail.com</p>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://instagram.com/alfianltf24" target="_blank" class="contact-box p-6 block hover:bg-gray-800 transition">
+          <i class="fab fa-instagram contact-icon"></i>
+          <h3 class="text-lg font-semibold mb-1">Instagram</h3>
+          <p class="text-gray-400 text-sm">alfianltf24</p>
+        </a>
+
+        <!-- GITHUB -->
+        <a href="https://github.com/luthfialfian" target="_blank" class="contact-box p-6 block hover:bg-gray-800 transition">
+          <i class="fab fa-github contact-icon"></i>
+          <h3 class="text-lg font-semibold mb-1">GitHub</h3>
+          <p class="text-gray-400 text-sm">github.com/luthfialfian</p>
+        </a>
+
+        <!-- LINKEDIN -->
+        <a href="https://linkedin.com/in/usernamekamu" target="_blank" class="contact-box p-6 block hover:bg-gray-800 transition">
+          <i class="fab fa-linkedin contact-icon"></i>
+          <h3 class="text-lg font-semibold mb-1">LinkedIn</h3>
+          <p class="text-gray-400 text-sm">linkedin.com/in/luthfialfian</p>
+        </a>
+
+        <!-- LOCATION -->
+        <div class="contact-box p-6">
+          <i class="fas fa-map-marker-alt contact-icon"></i>
+          <h3 class="text-lg font-semibold mb-1">Lokasi</h3>
+          <p class="text-gray-400 text-sm">Jakarta Timur / DKI Jakarta, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shortcut Button -->
+  <a href="index.html" class="shortcut-btn flex items-center gap-2">
+    <i class="fas fa-home"></i> <span>Beranda</span>
+  </a>
+
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    <p>&copy; 2025 Muhamad Luthfi Alfian. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyek — Muhamad Luthfi Alfian</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    #projects-section {
+      padding-top: 7rem;
+      padding-bottom: 6rem;
+    }
+    header h1, header p {
+      text-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+    .project-card {
+      background: rgba(31, 41, 55, 0.8);
+      border: 1px solid rgba(107, 114, 128, 0.4);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(99,102,241,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(99,102,241,0.5);
+    }
+    .project-img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 640px) {
+      header div {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 relative overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed w-full top-0 left-0 bg-gray-900 bg-opacity-70 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-gray-200 text-sm md:text-base font-medium">Muhamad Luthfi Alfian</h1>
+      <p class="text-xl md:text-2xl font-semibold tracking-wide text-indigo-400">IT SUPPORT</p>
+    </div>
+  </header>
+
+  <!-- PROJECT SECTION -->
+  <section id="projects-section" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-gray-900 to-purple-900 opacity-70"></div>
+
+    <div class="max-w-6xl z-10">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-indigo-400">Proyek yang Pernah Saya Kerjakan</h2>
+
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <img src="JATINGAN.png" alt="Project 1" class="project-img">
+          <div class="p-5 text-left">
+            <h3 class="font-semibold text-lg mb-2 text-indigo-400">Sistem Pemantauan Jaringan</h3>
+            <p class="text-sm text-gray-300 mb-4">
+              Membuat sistem pemantauan jaringan internal kantor untuk memastikan koneksi stabil dan cepat.
+            </p>
+            <a href="#" class="inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-semibold transition">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <img src="iMG_20231228_143202_786.jpg" alt="Project 2" class="project-img">
+          <div class="p-5 text-left">
+            <h3 class="font-semibold text-lg mb-2 text-indigo-400">Instalasi & Maintenance CCTV</h3>
+            <p class="text-sm text-gray-300 mb-4">
+              Melakukan pemasangan, konfigurasi, dan perawatan sistem CCTV di lingkungan perusahaan.
+            </p>
+            <a href="#" class="inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-semibold transition">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <img src="MAINTANANCE KOMP.jpg" alt="Project 3" class="project-img">
+          <div class="p-5 text-left">
+            <h3 class="font-semibold text-lg mb-2 text-indigo-400">Perawatan & Troubleshooting PC</h3>
+            <p class="text-sm text-gray-300 mb-4">
+              Menangani perawatan berkala, perakitan, serta troubleshooting perangkat komputer.
+            </p>
+            <a href="#" class="inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-semibold transition">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+          <img src="PRINTER.jpg" alt="Project 4" class="project-img">
+          <div class="p-5 text-left">
+            <h3 class="font-semibold text-lg mb-2 text-indigo-400">Perbaikan Printer</h3>
+            <p class="text-sm text-gray-300 mb-4">
+              Memperbaiki Printer yang RUSAK, dan mmemecahkan troubleshooting lalu dokumentasi, dan laporan untuk pengajuan Sparepart.
+            </p>
+            <a href="#" class="inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-semibold transition">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card">
+          <img src="EDITING.jpg" alt="Project 5" class="project-img">
+          <div class="p-5 text-left">
+            <h3 class="font-semibold text-lg mb-2 text-indigo-400">Desain Brosur & Poster Digital</h3>
+            <p class="text-sm text-gray-300 mb-4">
+              Membuat desain promosi digital yang menarik dan profesional menggunakan Photoshop & CorelDrawX7.
+            </p>
+            <a href="#" class="inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-semibold transition">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card">
+          <img src="MAINTANNCE.jpg" alt="Project 6" class="project-img">
+          <div class="p-5 text-left">
+            <h3 class="font-semibold text-lg mb-2 text-indigo-400">Optimalisasi Infrastruktur IT</h3>
+            <p class="text-sm text-gray-300 mb-4">
+              Menyusun ulang infrastruktur jaringan dan perangkat agar efisien serta hemat biaya operasional.
+            </p>
+            <a href="#" class="inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-semibold transition">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 mb-4 text-center">
+        <a href="contact.html" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-full font-semibold shadow-lg transition">Hubungi Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    <p>&copy; 2025 Muhamad Luthfi Alfian. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>

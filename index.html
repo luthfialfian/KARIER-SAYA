@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Beranda — Muhamad Luthfi Alfian</title>
+
+  <!-- Tailwind, Font Awesome & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #312e81, #111827, #4c1d95);
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    /* Canvas Partikel */
+    #bgCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Hero Section */
+    #hero {
+      padding-top: 8rem;
+      padding-bottom: 4rem;
+    }
+
+    /* Efek Foto Profil */
+    .profile-glow {
+      box-shadow: 0 0 25px rgba(99,102,241,0.4);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .profile-glow:hover {
+      transform: scale(1.07) rotate(1deg);
+      box-shadow: 0 0 35px rgba(129,140,248,0.8);
+    }
+
+    /* Tombol Glow */
+    .glow-btn {
+      box-shadow: 0 0 12px rgba(99,102,241,0.4);
+      transition: all 0.3s ease;
+    }
+    .glow-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(99,102,241,0.7);
+    }
+
+    /* Tombol Download (Hijau) */
+    .glow-btn.bg-green-600 {
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+    }
+    .glow-btn.bg-green-600:hover {
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.7);
+    }
+
+    /* Shortcut Menu */
+    #shortcut-menu {
+      transform-origin: bottom right;
+      transition: all 0.25s ease-in-out;
+    }
+    #shortcut-menu.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Fade-in Animasi */
+    .fade-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 640px) {
+      header div {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+      }
+      .profile-glow {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+
+<body class="text-gray-100 overflow-x-hidden relative">
+  <!-- Latar belakang partikel -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- HEADER -->
+  <header class="fixed w-full top-0 left-0 bg-gray-900 bg-opacity-70 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-gray-200 text-sm md:text-base font-medium">Muhamad Luthfi Alfian</h1>
+      <p class="text-xl md:text-2xl font-semibold tracking-wide text-indigo-400">IT SUPPORT</p>
+    </div>
+  </header>
+
+  <!-- BAGIAN UTAMA -->
+  <section id="hero" class="flex flex-col justify-center items-center text-center px-6 fade-section relative overflow-hidden">
+    <img src="saas.jpg" alt="Foto Profil" class="rounded-full profile-glow border-4 border-indigo-500 mb-6 w-44 h-44 object-cover z-10">
+
+    <h1 class="text-3xl md:text-5xl font-bold mb-3 tracking-tight z-10">
+      Halo, Saya <span class="text-indigo-400">Muhamad Luthfi Alfian</span>
+    </h1>
+
+    <p class="text-indigo-200 text-lg md:text-xl mb-6 z-10">
+      Spesialis IT Support & Desain Kreatif
+    </p>
+
+    <p class="max-w-2xl text-gray-300 z-10 leading-relaxed">
+      Seorang profesional yang menggabungkan ketelitian teknis dengan sentuhan kreatif.  
+      Berpengalaman dalam dukungan jaringan, perawatan sistem komputer dan printer, serta pembuatan media visual dan desain untuk kebutuhan promosi perusahaan.
+    </p>
+
+    <div class="z-10 flex flex-wrap justify-center gap-4 mt-8">
+      <a href="about.html" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-full font-semibold shadow-lg glow-btn">
+        Tentang Saya
+      </a>
+      <a href="skills.html" class="px-6 py-3 border border-indigo-500 rounded-full hover:bg-indigo-700 transition">
+        Keahlian
+      </a>
+      <a href="projects.html" class="px-6 py-3 border border-indigo-500 rounded-full hover:bg-indigo-700 transition">
+        Proyek
+      </a>
+      <a href="contact.html" class="px-6 py-3 bg-purple-600 hover:bg-purple-500 rounded-full font-semibold shadow-lg glow-btn">
+        Kontak
+      </a>
+
+      <!-- 🔽 Tombol Download CV -->
+      <a href="CV NEW 2025 UPDATE.pdf" download
+         class="px-6 py-3 bg-green-600 hover:bg-green-500 rounded-full font-semibold shadow-lg glow-btn flex items-center gap-2">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+    </div>
+  </section>
+
+  <!-- Tombol Shortcut -->
+  <div class="fixed bottom-6 right-6 bg-indigo-700 hover:bg-indigo-600 text-white p-4 rounded-full shadow-xl z-50 transition transform hover:scale-110">
+    <button id="shortcut-btn"><i class="fas fa-th-large fa-lg"></i></button>
+  </div>
+
+  <!-- Menu Shortcut -->
+  <div id="shortcut-menu" class="hidden opacity-0 fixed bottom-20 right-6 bg-gray-800 bg-opacity-95 p-4 rounded-xl shadow-2xl space-y-3 text-sm text-gray-200 border border-gray-700 z-50">
+    <a href="index.html" class="block hover:text-indigo-400"><i class="fas fa-home mr-2"></i>Beranda</a>
+    <a href="about.html" class="block hover:text-indigo-400"><i class="fas fa-user mr-2"></i>Tentang</a>
+    <a href="skills.html" class="block hover:text-indigo-400"><i class="fas fa-tools mr-2"></i>Keahlian</a>
+    <a href="projects.html" class="block hover:text-indigo-400"><i class="fas fa-project-diagram mr-2"></i>Proyek</a>
+    <a href="contact.html" class="block hover:text-indigo-400"><i class="fas fa-envelope mr-2"></i>Kontak</a>
+  </div>
+
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    <p>&copy; 2025 Muhamad Luthfi Alfian</p>
+  </footer>
+
+  <!-- Script JS Langsung -->
+  <script>
+    // === Partikel Background ===
+    const canvas = document.getElementById("bgCanvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let particles = [];
+    for (let i = 0; i < 80; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 2 + 1,
+        dx: (Math.random() - 0.5) * 0.8,
+        dy: (Math.random() - 0.5) * 0.8,
+      });
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "rgba(99,102,241,0.3)";
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      });
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    // === Fade-in Saat Scroll ===
+    const sections = document.querySelectorAll('.fade-section');
+    function revealOnScroll() {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) sec.classList.add('visible');
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // === Shortcut Menu ===
+    const shortcutBtn = document.getElementById('shortcut-btn');
+    const shortcutMenu = document.getElementById('shortcut-menu');
+    let open = false;
+
+    shortcutBtn.addEventListener('click', () => {
+      open = !open;
+      if (open) {
+        shortcutMenu.classList.remove('hidden');
+        setTimeout(() => shortcutMenu.classList.add('show'), 10);
+        shortcutMenu.style.opacity = "1";
+      } else {
+        shortcutMenu.classList.remove('show');
+        setTimeout(() => shortcutMenu.classList.add('hidden'), 200);
+        shortcutMenu.style.opacity = "0";
+      }
+      shortcutBtn.querySelector('i').classList.toggle('fa-times', open);
+      shortcutBtn.querySelector('i').classList.toggle('fa-th-large', !open);
+    });
+  </script>
+</body>
+</html>

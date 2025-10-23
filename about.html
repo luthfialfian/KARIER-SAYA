@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhamad Luthfi Alfian</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    #about-section {
+      padding-top: 7rem;
+      padding-bottom: 6rem; /* jarak tambahan agar tombol tidak nempel footer */
+    }
+    header h1, header p {
+      text-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+    .highlight {
+      color: #818cf8;
+      font-weight: 600;
+    }
+    .profile-pic {
+      box-shadow: 0 0 20px rgba(99,102,241,0.4);
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.03);
+    }
+    @media (max-width: 640px) {
+      header div {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 relative overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed w-full top-0 left-0 bg-gray-900 bg-opacity-70 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-gray-200 text-sm md:text-base font-medium">Muhamad Luthfi Alfian</h1>
+      <p class="text-xl md:text-2xl font-semibold tracking-wide text-indigo-400">IT SUPPORT</p>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about-section" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-gray-900 to-purple-900 opacity-70"></div>
+
+    <div class="max-w-4xl z-10">
+      <img src="saas.jpg" alt="Foto Profil" class="rounded-full profile-pic border-4 border-indigo-500 mx-auto mb-8 w-40 h-40 object-cover">
+
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-400">Perkenalan Diri saya</h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Saya adalah seorang <span class="highlight">IT Support</span>, yang memiliki semangat tinggi dalam mendukung sistem teknologi informasi agar berjalan optimal.  
+        Berpengalaman dalam penanganan <span class="highlight">hardware, software, jaringan komputer, Perbaikan Printer ,dan CCTV</span>.  
+        Saya senang bekerja secara teliti, detail, cepat tanggap, dan selalu mencari solusi yang efisien terhadap setiap kendala teknis.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Di luar kemampuan teknis, saya juga memiliki ketertarikan pada bidang desain visual, dan Bahasa Program.  
+        Saya percaya kegigihan, profesional, komunikasi, visual yang baik adalah bagian penting dari dunia IT modern.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 text-left mt-10">
+        <div class="bg-gray-800 bg-opacity-60 p-6 rounded-xl shadow-md border border-gray-700">
+          <h3 class="text-lg font-semibold text-indigo-400 mb-2"><i class="fas fa-user-check mr-2"></i>Kepribadian</h3>
+          <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+            <li>Teliti dan disiplin dalam bekerja</li>
+            <li>Komunikatif serta mudah beradaptasi</li>
+            <li>Terbiasa bekerja dalam tim maupun individu</li>
+            <li>Mampu mengatur waktu dengan efisien</li>
+            <li>Selalu teguh pada SOP Perusahaan</li>
+            <li>Penyelesaian masalah pada Problem Solving di user </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-60 p-6 rounded-xl shadow-md border border-gray-700">
+          <h3 class="text-lg font-semibold text-indigo-400 mb-2"><i class="fas fa-briefcase mr-2"></i>Tujuan Karier</h3>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Menjadi bagian dari tim IT profesional yang berfokus pada pengembangan sistem serta perawatan infrastruktur digital,  
+            sekaligus terus memperdalam pengetahuan saya dalam dunia teknologi yang terus berkembang.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 mb-4"> <!-- jarak bawah ditambah -->
+        <a href="skills.html" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-full font-semibold shadow-lg transition">Lihat Keahlian Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    <p>&copy; 2025 Muhamad Luthfi Alfian.</p>
+  </footer>
+</body>
+</html>

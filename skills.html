@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keahlian — Muhamad Luthfi Alfian</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    #skills-section {
+      padding-top: 7rem;
+      padding-bottom: 6rem;
+    }
+    header h1, header p {
+      text-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+    .skill-bar {
+      height: 10px;
+      background-color: #2d2d2d;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      border-radius: 10px;
+      transition: width 1.5s ease-in-out;
+    }
+    .skill-box {
+      background: rgba(31, 41, 55, 0.7);
+      border: 1px solid rgba(107, 114, 128, 0.4);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(99,102,241,0.4);
+    }
+    @media (max-width: 640px) {
+      header div {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 relative overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed w-full top-0 left-0 bg-gray-900 bg-opacity-70 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-gray-200 text-sm md:text-base font-medium">Muhamad Luthfi Alfian</h1>
+      <p class="text-xl md:text-2xl font-semibold tracking-wide text-indigo-400">IT SUPPORT</p>
+    </div>
+  </header>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills-section" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-gray-900 to-purple-900 opacity-70"></div>
+
+    <div class="max-w-5xl z-10">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-indigo-400">Keahlian Saya</h2>
+
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+
+        <!-- SKILL 1 -->
+        <div class="skill-box">
+          <h3 class="font-semibold text-lg mb-2 flex items-center"><i class="fas fa-network-wired mr-2 text-indigo-400"></i>Topologi Jaringan</h3>
+          <p class="text-sm text-gray-300 mb-3">Menguasai instalasi, konfigurasi, dan troubleshooting jaringan LAN/Wi-Fi, pada kantor.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+        </div>
+
+        <!-- SKILL 2 -->
+        <div class="skill-box">
+          <h3 class="font-semibold text-lg mb-2 flex items-center"><i class="fas fa-desktop mr-2 text-indigo-400"></i>Hardware & Software</h3>
+          <p class="text-sm text-gray-300 mb-3">Memperbaiki, merakit, dan melakukan maintenance komputer dan laptop, Menginstal OS Windows, Linux.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+        </div>
+
+        <!-- SKILL 3 -->
+        <div class="skill-box">
+          <h3 class="font-semibold text-lg mb-2 flex items-center"><i class="fas fa-video mr-2 text-indigo-400"></i>CCTV & Keamanan Sistem</h3>
+          <p class="text-sm text-gray-300 mb-3">Instalasi, konfigurasi, dan perawatan sistem keamanan berbasis kamera dan jaringan.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+        </div>
+
+        <!-- SKILL 4 -->
+        <div class="skill-box">
+          <h3 class="font-semibold text-lg mb-2 flex items-center"><i class="fas fa-paint-brush mr-2 text-indigo-400"></i>Desain Grafis</h3>
+          <p class="text-sm text-gray-300 mb-3">Mampu membuat materi promosi dan presentasi visual menggunakan Photoshop & CorelDrawX7.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+        </div>
+
+        <!-- SKILL 5 -->
+        <div class="skill-box">
+          <h3 class="font-semibold text-lg mb-2 flex items-center"><i class="fas fa-database mr-2 text-indigo-400"></i>Rekap Penjualan Toko</h3>
+          <p class="text-sm text-gray-300 mb-3">Mengelola data penjualan perbulan dengan format perhari, lalu di terukan data ke bagian Finance.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+        </div>
+
+        <!-- SKILL 6 -->
+        <div class="skill-box">
+          <h3 class="font-semibold text-lg mb-2 flex items-center"><i class="fas fa-headset mr-2 text-indigo-400"></i>Dukungan Teknis</h3>
+          <p class="text-sm text-gray-300 mb-3">Memberikan bantuan dan solusi cepat terhadap masalah komputer, printer, dan jaringan yang bermasalah pada toko.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 mb-4 text-center">
+        <a href="projects.html" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-full font-semibold shadow-lg transition">Lihat Proyek Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    <p>&copy; 2025 Muhamad Luthfi Alfian. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script>
+    // Efek animasi muncul saat di-scroll
+    const bars = document.querySelectorAll('.skill-fill');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.style.width = entry.target.getAttribute('style').match(/\d+%/)[0];
+        }
+      });
+    }, { threshold: 0.5 });
+    bars.forEach(bar => observer.observe(bar));
+  </script>
+</body>
+</html>
